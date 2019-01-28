@@ -3116,7 +3116,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( 4 * i > str.size() )
+  REQUIRE( 4u * i > str.size() )
 with expansion:
   4 > 1
 
@@ -3128,7 +3128,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( 4 * i > str.size() )
+  REQUIRE( 4u * i > str.size() )
 with expansion:
   4 > 2
 
@@ -3140,7 +3140,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( 4 * i > str.size() )
+  REQUIRE( 4u * i > str.size() )
 with expansion:
   4 > 3
 
@@ -3188,7 +3188,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( 4 * i > str.size() )
+  REQUIRE( 4u * i > str.size() )
 with expansion:
   8 > 1
 
@@ -3200,7 +3200,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( 4 * i > str.size() )
+  REQUIRE( 4u * i > str.size() )
 with expansion:
   8 > 2
 
@@ -3212,7 +3212,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( 4 * i > str.size() )
+  REQUIRE( 4u * i > str.size() )
 with expansion:
   8 > 3
 
@@ -3260,7 +3260,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( 4 * i > str.size() )
+  REQUIRE( 4u * i > str.size() )
 with expansion:
   12 > 1
 
@@ -3272,7 +3272,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( 4 * i > str.size() )
+  REQUIRE( 4u * i > str.size() )
 with expansion:
   12 > 2
 
@@ -3284,7 +3284,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( 4 * i > str.size() )
+  REQUIRE( 4u * i > str.size() )
 with expansion:
   12 > 3
 
@@ -9633,7 +9633,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( strlen(std::get<0>(data)) == std::get<1>(data) )
+  REQUIRE( strlen(std::get<0>(data)) == static_cast<size_t>(std::get<1>(data)) )
 with expansion:
   5 == 5
 
@@ -9644,7 +9644,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( strlen(std::get<0>(data)) == std::get<1>(data) )
+  REQUIRE( strlen(std::get<0>(data)) == static_cast<size_t>(std::get<1>(data)) )
 with expansion:
   6 == 6
 
@@ -9655,7 +9655,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( strlen(std::get<0>(data)) == std::get<1>(data) )
+  REQUIRE( strlen(std::get<0>(data)) == static_cast<size_t>(std::get<1>(data)) )
 with expansion:
   5 == 5
 
@@ -9666,7 +9666,7 @@ Generators.tests.cpp:<line number>
 ...............................................................................
 
 Generators.tests.cpp:<line number>: PASSED:
-  REQUIRE( strlen(std::get<0>(data)) == std::get<1>(data) )
+  REQUIRE( strlen(std::get<0>(data)) == static_cast<size_t>(std::get<1>(data)) )
 with expansion:
   6 == 6
 
