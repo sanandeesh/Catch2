@@ -45,12 +45,11 @@ namespace Generators {
     template<typename T>
     struct IGenerator : GeneratorUntypedBase {
         virtual ~IGenerator() = default;
-        /**
-         * Returns the current element of the generator
-         *
-         * \Precondition The generator is either freshly constructed,
-         * or the last call to `next()` returned true
-         */
+
+        // Returns the current element of the generator
+        //
+        // \Precondition The generator is either freshly constructed,
+        // or the last call to `next()` returned true
         virtual T const& get() const = 0;
         using type = T;
     };

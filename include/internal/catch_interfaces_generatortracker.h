@@ -17,12 +17,10 @@ namespace Catch {
         public:
             GeneratorUntypedBase() = default;
             virtual ~GeneratorUntypedBase();
-            /**
-             * Attempts to move the generator to the next element
-             *
-             * Returns true iff the move succeeded (and a valid element
-             * can be retrieved).
-             */
+            // Attempts to move the generator to the next element
+             //
+             // Returns true iff the move succeeded (and a valid element
+             // can be retrieved).
             virtual bool next() = 0;
         };
         using GeneratorBasePtr = std::unique_ptr<GeneratorUntypedBase>;
